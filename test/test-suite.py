@@ -5,6 +5,8 @@ Created on 19 juil. 2018
 '''
 
 import unittest
+
+from test.IntegrationTestCases import TestClientEntityManager
 from test.TestCases import TestCalculatrice, TestVoiture
 
 if __name__ == '__main__':
@@ -16,6 +18,7 @@ if __name__ == '__main__':
     # (On ajoute des INSTANCES) des classes de tests 
     suite.addTest(TestCalculatrice())
     suite.addTest(TestVoiture())
+    suite.addTest(TestClientEntityManager())
     
     # Lancer l'exécution de la suite.
     runner = unittest.TextTestRunner()
