@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 '''Créé le 27 juin 2018 par Etienne.
 
 Ce module contient les classes principales de l'application.
