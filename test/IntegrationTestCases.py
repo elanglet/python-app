@@ -18,7 +18,7 @@ class TestClientEntityManager(unittest.TestCase):
 
     def setUp(self):
         # On initialise le jeu de données
-        with db.connect('../db/python-app.db') as conn:
+        with db.connect('db/python-app.db') as conn:
             cursor = conn.cursor()
             with open('./scripts/init-db.sql') as script:
                 cursor.executescript(
@@ -29,7 +29,7 @@ class TestClientEntityManager(unittest.TestCase):
     
     def tearDown(self):
         # On purge le jeu de données
-        with db.connect('../db/python-app.db') as conn:
+        with db.connect('db/python-app.db') as conn:
             cursor = conn.cursor()
             with open('./scripts/clean-db.sql') as script:
                 cursor.executescript(
