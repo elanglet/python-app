@@ -8,7 +8,7 @@ Created on 27 juin 2018
 import unittest
 from code.classes import Calculatrice, Voiture
 
-class TestCalculatrice(unittest.TestCase):
+class CalculatriceTestCase(unittest.TestCase):
     
     calculatrice = None
     
@@ -47,7 +47,7 @@ class TestCalculatrice(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             resultat = self.calculatrice.division(88, 0)
  
-class TestVoiture(unittest.TestCase):
+class VoitureTestCase(unittest.TestCase):
     
     voiture = None
     

@@ -11,7 +11,7 @@ import sqlite3 as db
 from code.orm.classes import ClientEntityManager, EntityNotFoundException
 from code.orm.entites import Client
 
-class TestClientEntityManager(unittest.TestCase):
+class ClientEntityManagerTestCase(unittest.TestCase):
 
 
     em = None
