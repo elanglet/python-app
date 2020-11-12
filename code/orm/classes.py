@@ -17,7 +17,7 @@ class EntityNotFoundException(Exception):
 class ClientEntityManager:
     
     def __connexion(self):
-        url = "sqlite:///../db/python-app.db"
+        url = "sqlite:///db/python-app.db"
         
         engine = create_engine(url, encoding='utf-8')
         session = scoped_session(sessionmaker(autoflush=True))
